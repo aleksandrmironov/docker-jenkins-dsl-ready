@@ -20,3 +20,4 @@ workflow-aggregator
 ws-cleanup
 greenballs
 docker-slaves
+email-ext
