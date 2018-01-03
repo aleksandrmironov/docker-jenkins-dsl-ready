@@ -37,32 +37,6 @@ When you start the container the following happens:
   - else if a svn repository url is provided with the `SEEDJOB_SVN` environment variable, the _SeedJob_ will fetch the groovy scripts from there
 
 
-Included plugins
-----------------
-
-- [Job DSL][job-dsl]
-- [Pipeline][workflow-aggregator]
-- [CloudBees Docker Pipeline][docker-workflow]
-- [Git][git]
-- [GitHub][github]
-- [GitHub pull request builder][ghprb]
-- [Config File Provider][config-file-provider]
-- [Groovy PostBuild][groovy-postbuild]
-- [AnsiColor][ansicolor]
-- [Rebuild][rebuild]
-- [Sidebar-Link][sidebar-link]
-- [Build-timeout][build-timeout]
-- [Cobertura][cobertura]
-- [Copy Artifact][copyartifact]
-- [Description Setter][description-setter]
-- [Email-ext][email-ext]
-- [Gradle][gradle]
-- [Parameterized  Trigger][parameterized-trigger]
-- [Publish Over Ssh][publish-over-ssh]
-- [Warnings][warnings]
-- [Workspace Cleanup][ws-cleanup]
-
-
 Usage
 -----
 
