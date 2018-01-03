@@ -4,7 +4,7 @@ USER root
 
 # Install sudo to enpower jenkins (will be usefull for running docker in some cases)
 RUN apt-get update \
-    && apt-get install -y sudo libltdl7 maven\
+    && apt-get install -y sudo libltdl7 maven nmap\
     && rm -rf /var/lib/apt/lists/* \
     && echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
@@ -21,6 +21,10 @@ RUN mkdir -p /usr/share/jenkins/ref/jobs/SeedJob/workspace/
 
 # The list of plugins to install
 COPY plugins.txt /tmp/
+
+#add service availability checker
+COPY bin/wait_for.sh /usr/bin/wait_for.sh
+RUN chmod +x /usr/bin/wait_for.sh
 
 # Download plugins and their dependencies
 RUN mkdir /usr/share/jenkins/ref/plugins \
