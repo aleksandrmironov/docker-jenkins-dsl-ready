@@ -159,7 +159,7 @@ Your jobs might depend on software which is not available in this image. You can
 
 
     # COPY your Seed Job DSL script
-    COPY dsl/*.groovy /usr/share/jenkins/ref/jobs/SeedJob/workspace/
+    COPY dsl/ /usr/share/jenkins/ref/jobs/SeedJob/workspace/
 
 
 [ansicolor]: https://wiki.jenkins-ci.org/display/JENKINS/AnsiColor+Plugin
