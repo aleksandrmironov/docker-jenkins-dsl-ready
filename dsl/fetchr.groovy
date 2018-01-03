@@ -27,6 +27,10 @@ freeStyleJob('fetchr-build') {
             }
         }
     }
+    
+    triggers {
+        scm('H/5 * * * * ')
+    }
 
     steps {
         shell(readFileFromWorkspace('fetchr.sh'))
