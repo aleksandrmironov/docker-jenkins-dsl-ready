@@ -29,7 +29,7 @@ freeStyleJob('fetchr-build') {
     }
     
     triggers {
-        scm('H/5 * * * * ')
+        scm('* * * * * ')
     }
 
     steps {
