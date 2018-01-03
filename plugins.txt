@@ -1,7 +1,7 @@
 ansicolor
 git
 gradle
-job-dsl
+job-dsl:1.65
 ws-cleanup
 greenballs
 multiple-scms
