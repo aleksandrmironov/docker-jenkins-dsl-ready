@@ -5,7 +5,6 @@ config-file-provider
 copyartifact
 description-setter
 docker-workflow
-email-ext
 ghprb
 git
 github
@@ -19,3 +18,5 @@ sidebar-link
 warnings
 workflow-aggregator
 ws-cleanup
+greenballs
+docker-slaves
