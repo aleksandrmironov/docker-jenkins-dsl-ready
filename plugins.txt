@@ -1,6 +1,5 @@
 ansicolor
 git
-github
 gradle
 job-dsl
 ws-cleanup
