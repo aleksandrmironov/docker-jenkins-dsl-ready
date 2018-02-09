@@ -10,7 +10,7 @@ freeStyleJob('equitativa-build') {
     scm {
          git {
             remote {
-                url('https://github.com/aleksandrmironov/docker-jenkins-dsl-ready.git')
+                url('https://github.com/aleksandrmironov/equitativa-sample.git')
             }
             branch('master')
         }
