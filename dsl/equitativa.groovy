@@ -10,12 +10,9 @@ freeStyleJob('equitativa-build') {
     scm {
          git {
             remote {
-                url('https://github.com/roundcube/roundcubemail.git')
+                url('https://github.com/aleksandrmironov/docker-jenkins-dsl-ready.git')
             }
             branch('master')
-            extensions{
-                relativeTargetDirectory('app')
-            }
         }
     }
     

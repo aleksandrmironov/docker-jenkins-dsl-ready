@@ -4,11 +4,12 @@ USER root
 
 # Install sudo to enpower jenkins (will be usefull for running docker in some cases)
 RUN apt-get update \
-    && apt-get install -y sudo libltdl7 nmap\
+    && apt-get install -y sudo python-pip libltdl7 nmap\
     && rm -rf /var/lib/apt/lists/* \
     && echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 
 # a few helper scripts
+RUN pip install ansible docker-py
 RUN mkdir /opt/bin
 COPY build/*.py build/*.sh /opt/bin/
 RUN chmod +x /opt/bin/*
